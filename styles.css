@@ -1,15 +1,15 @@
 
 
 
-.wrapper{
+    .wrapper{
     display: grid;
     
     grid-template-areas: 'header header header header header header'
       'Main Main Main Main Main Main'
-      'name name name name name name'
+      'Name Name Name Name Name Name'
       'Menu Menu Menu Menu Menu Menu'
       'footer footer footer footer footer footer';
-  }
+     }
   
   .navbar {
     grid-area: header;
@@ -23,12 +23,24 @@
     left: 0px;
    
    }
+   @media only screen and (max-width: 600px) {
+    .navbar{
+        justify-content: space-around;
+    }
+  }
 
    .navbar>a>div{
     margin-left: 30px;
     margin-right: 20px;
-    color: white;}
-       
+    color: white;
+    
+    }
+    @media only screen and (max-width: 600px) {
+        .navbar>a>div {
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+      }
 
 
 .navbar>a:hover{
@@ -39,25 +51,47 @@
 }
   
   .welcome-section { grid-area: Main; 
-         background-color: paleturquoise;
+         background-image: url("https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616__480.jpg");
+         background-repeat: no-repeat;
+         color:khaki;
+        background-size: cover;
+        background-position: center center;
          height: 100vh;
          display: flex;
          align-items: center;
         justify-content: center;
         width:100%;
+        font-family: 'Permanent Marker', cursive;
+       
         }
 
-        .x { grid-area: name;
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            
-            }
+
+     .Name { grid-area: Name;
+
+                background-color: rebeccapurple;
+                display: flex;
+                justify-content: space-around;
+                color: white;
+                }
+    .Name>h1{
+        border-bottom: 1px solid whitesmoke;
+    }
+    @media only screen and (max-width: 768px) {
+        .Name>h1{
+            font-size: 7vw;
+        }
+      }
+    
 
 .Projects { grid-area: Menu;
-            background-color: rebeccapurple;
+            background-image: url("https://wallpapercave.com/wp/wp2729842.jpg");
+            background-size: cover;
+            background-position: center center;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
+            gap: 20px;
+            
             
             }
 
@@ -69,14 +103,33 @@
 
 
 .Projects>a>div{
-    width: 10em;
+    width: 14em;
     height: 10em;
     background-color: lemonchiffon;
+    display:flex;
+    flex-direction: column;
+   
+    
 }
 
-.project1{
-    background-image: url("https://yt3.ggpht.com/ytc/AKedOLSayWnkA_q7mFQvHY3sdmr0QfxHuXpHT5CAJ5Qh=s900-c-k-c0x00ffffff-no-rj");
-}    
+.top{
+    
+    height: 80%;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/EzgdmaCQuT84bgDL4fhXZS.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20%;
+    background-color: grey;
+    
+}
+ 
   
   .wrapper > div {
     text-align: center; 
