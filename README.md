@@ -1,7 +1,7 @@
 # HTML-and-CSS-microverse-project
 
-+Index.html
-+Css
++ Index.html
++ Css
 
 ## added some google fonts
 
