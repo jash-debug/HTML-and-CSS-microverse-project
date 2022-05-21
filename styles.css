@@ -1,0 +1,89 @@
+
+
+
+.wrapper{
+    display: grid;
+    
+    grid-template-areas: 'header header header header header header'
+      'Main Main Main Main Main Main'
+      'name name name name name name'
+      'Menu Menu Menu Menu Menu Menu'
+      'footer footer footer footer footer footer';
+  }
+  
+  .navbar {
+    grid-area: header;
+    background-color: rgb(73, 8, 8);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+   
+   }
+
+   .navbar>a>div{
+    margin-left: 30px;
+    margin-right: 20px;
+    color: white;}
+       
+
+
+.navbar>a:hover{
+    background-color: rgb(72, 72, 163);
+}
+.navbar>a{
+    text-decoration: none;
+}
+  
+  .welcome-section { grid-area: Main; 
+         background-color: paleturquoise;
+         height: 100vh;
+         display: flex;
+         align-items: center;
+        justify-content: center;
+        width:100%;
+        }
+
+        .x { grid-area: name;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            
+            }
+
+.Projects { grid-area: Menu;
+            background-color: rebeccapurple;
+            display: flex;
+            justify-content: space-around;
+            
+            }
+
+
+  .item4 { grid-area: footer; 
+         background-color: wheat;}
+  
+
+
+
+.Projects>a>div{
+    width: 10em;
+    height: 10em;
+    background-color: lemonchiffon;
+}
+
+.project1{
+    background-image: url("https://yt3.ggpht.com/ytc/AKedOLSayWnkA_q7mFQvHY3sdmr0QfxHuXpHT5CAJ5Qh=s900-c-k-c0x00ffffff-no-rj");
+}    
+  
+  .wrapper > div {
+    text-align: center; 
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  h1{
+    justify-items: center;
+  }
